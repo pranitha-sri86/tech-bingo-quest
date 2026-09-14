@@ -186,13 +186,13 @@ return;
       console.log("=================================");
 
       const res = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/game/submit-code`,
-        {
-          studentId,
-          cell: Number(cell),
-          answer: answer.trim(),
-        }
-      );
+  `${import.meta.env.VITE_API_URL}/api/game/answer`,
+  {
+    studentId,
+    cell: Number(cell),
+    answer: answer.trim(),
+  }
+);
 
       console.log(
         "ANSWER RESULT:",
