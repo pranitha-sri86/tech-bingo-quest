@@ -1,0 +1,27 @@
+.countdown-card{
+
+background:#2563eb;
+
+padding:20px;
+
+border-radius:16px;
+
+margin-top:30px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.countdown-card h3{
+
+margin-bottom:10px;
+
+}
+
+.countdown-card h1{
+
+font-size:50px;
+
+}

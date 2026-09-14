@@ -1,0 +1,208 @@
+.board-container{
+    background:#111827;
+    border-radius:20px;
+    padding:30px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.bingo-title{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.bingo-title span{
+    color:#3B82F6;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.bingo-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.cell{
+
+height:85px;
+
+border-radius:18px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:38px;
+
+transition:.3s;
+
+cursor:pointer;
+
+/* Ensure text isn't selectable across browsers (including Safari) */
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ user-select: none;
+
+}
+
+.active{
+    background:#2563EB;
+    color:white;
+    box-shadow:0 0 20px rgba(37,99,235,.5);
+}
+
+.active:hover{
+    transform:scale(1.05);
+}
+
+.locked{
+    background:#1E293B;
+    color:#94A3B8;
+    cursor:not-allowed;
+}
+
+.progress-card{
+
+background:#111827;
+
+padding:20px;
+
+border-radius:15px;
+
+margin-bottom:25px;
+
+text-align:center;
+
+border:1px solid #2563EB;
+
+}
+
+.progress-card h2{
+
+color:white;
+
+margin-bottom:10px;
+
+}
+
+.progress-card h3{
+
+color:#3B82F6;
+
+font-size:28px;
+
+}
+
+.line-status{
+
+background:#111827;
+
+margin-bottom:20px;
+
+padding:20px;
+
+border-radius:15px;
+
+border:1px solid #2563EB;
+
+}
+
+.line-status h4{
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+.line-list{
+
+display:flex;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+}
+
+.line-list span{
+
+background:#2563EB;
+
+color:white;
+
+padding:8px 14px;
+
+border-radius:8px;
+
+}
+
+.line-list p{
+
+color:#CBD5E1;
+
+}
+
+.cell.active{
+
+background:#2563EB;
+
+cursor:pointer;
+
+}
+
+.cell.locked{
+
+background:#1E293B;
+
+cursor:not-allowed;
+
+opacity:.55;
+
+}
+
+.cell.completed{
+
+background:#10B981;
+
+color:white;
+
+font-weight:bold;
+
+}
+
+.cell{
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.cell:hover{
+
+transform:scale(1.05);
+
+}
+
+.active{
+
+background:#1976d2;
+
+color:white;
+
+}
+
+.completed{
+
+background:#27ae60;
+
+color:white;
+
+font-weight:bold;
+
+}

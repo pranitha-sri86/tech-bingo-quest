@@ -1,0 +1,355 @@
+.waiting-page {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background: #f2f5f9;
+
+    box-sizing: border-box;
+
+}
+
+
+.waiting-card {
+
+    width: 100%;
+    max-width: 850px;
+
+    padding: 45px;
+
+    background: white;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .10);
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.waiting-header {
+
+    margin-bottom: 25px;
+
+}
+
+
+.waiting-icon {
+
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e8f1ff;
+
+    font-size: 32px;
+
+}
+
+
+.waiting-header h1 {
+
+    margin: 0 0 12px;
+
+    color: #172033;
+
+    font-size: 34px;
+
+}
+
+
+.waiting-badge {
+
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    background: #e8f1ff;
+
+    color: #1976d2;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* =========================
+   WAITING STATUS
+========================= */
+
+.waiting-status {
+
+    padding: 25px 15px 30px;
+
+}
+
+
+.waiting-status h2 {
+
+    margin: 15px 0 8px;
+
+    color: #263238;
+
+    font-size: 25px;
+
+}
+
+
+.waiting-status p {
+
+    margin: 0 0 8px;
+
+    color: #555;
+
+    font-size: 17px;
+
+}
+
+
+.waiting-status small {
+
+    display: block;
+
+    color: #8a8a8a;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   LOADER
+========================= */
+
+.loader {
+
+    width: 55px;
+    height: 55px;
+
+    border: 5px solid #e1e6ec;
+
+    border-top: 5px solid #1976d2;
+
+    border-radius: 50%;
+
+    margin: 0 auto;
+
+    animation: spin 1s linear infinite;
+
+}
+
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================
+   QUICK RULES
+========================= */
+
+.quick-rules {
+
+    padding: 25px;
+
+    background: #f7f9fc;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+}
+
+
+.quick-rules h3 {
+
+    margin: 0 0 20px;
+
+    text-align: center;
+
+    color: #172033;
+
+    font-size: 21px;
+
+}
+
+
+.quick-rule-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.quick-rule {
+
+    display: flex;
+
+    gap: 12px;
+
+    align-items: flex-start;
+
+    padding: 15px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e9ef;
+
+}
+
+
+.quick-rule > span {
+
+    font-size: 23px;
+
+}
+
+
+.quick-rule p {
+
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 20px;
+
+}
+
+
+.quick-rule strong {
+
+    color: #263238;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.waiting-note {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 22px;
+
+    padding: 15px 18px;
+
+    background: #fff8e6;
+
+    border: 1px solid #ffe2a8;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+}
+
+
+.waiting-note > span {
+
+    font-size: 24px;
+
+}
+
+
+.waiting-note p {
+
+    margin: 0;
+
+    color: #765b20;
+
+    font-size: 13px;
+
+    line-height: 20px;
+
+}
+
+
+.waiting-note strong {
+
+    color: #5d4615;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .waiting-card {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .waiting-header h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .quick-rule-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .waiting-status h2 {
+
+        font-size: 22px;
+
+    }
+
+}

@@ -1,0 +1,55 @@
+.features{
+
+    padding:100px 10%;
+
+    background:#0b1220;
+}
+
+.features-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+}
+
+.features-heading span{
+
+    color:#60A5FA;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+.features-heading h2{
+
+    color:white;
+
+    font-size:48px;
+
+    margin:20px 0;
+}
+
+.features-heading p{
+
+    color:#94A3B8;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:30px;
+
+    font-size:18px;
+}
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+}

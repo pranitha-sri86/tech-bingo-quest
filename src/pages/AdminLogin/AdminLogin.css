@@ -1,0 +1,71 @@
+.admin-page{
+
+    min-height:100vh;
+
+    background:#08111f;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.admin-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.35;
+
+}
+
+.circle1{
+
+    width:320px;
+
+    height:320px;
+
+    background:#2563EB;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+.circle2{
+
+    width:280px;
+
+    height:280px;
+
+    background:#9333EA;
+
+    right:-100px;
+
+    bottom:-100px;
+
+}
+
+.circle3{
+
+    width:220px;
+
+    height:220px;
+
+    background:#06B6D4;
+
+    left:50%;
+
+    top:25%;
+
+}

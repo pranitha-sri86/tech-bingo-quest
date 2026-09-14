@@ -1,0 +1,57 @@
+.admin-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+.admin-header h1{
+
+    color:white;
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+}
+
+.admin-header p{
+
+    color:#94A3B8;
+
+}
+
+.status{
+
+    background:#1E293B;
+
+    color:white;
+
+    padding:14px 22px;
+
+    border-radius:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.status-dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#22C55E;
+
+}

@@ -1,0 +1,79 @@
+.leaderboard-panel{
+
+    background:#111827;
+
+    border:1px solid rgba(59,130,246,.20);
+
+    border-radius:20px;
+
+    padding:30px;
+
+}
+
+.leaderboard-panel h2{
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+.leaderboard-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    transition:.3s;
+
+}
+
+.leaderboard-row:hover{
+
+    padding-left:10px;
+
+    background:rgba(59,130,246,.06);
+
+}
+
+.rank{
+
+    color:#FBBF24;
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+}
+
+.player-name{
+
+    flex:1;
+
+    margin-left:20px;
+
+    color:white;
+
+}
+
+.player-score{
+
+    color:#60A5FA;
+
+    font-weight:bold;
+
+}

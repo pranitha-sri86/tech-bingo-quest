@@ -1,0 +1,25 @@
+.game-timer{
+
+width:220px;
+
+margin:auto;
+
+padding:15px;
+
+background:#111827;
+
+color:white;
+
+font-size:28px;
+
+text-align:center;
+
+border-radius:15px;
+
+border:2px solid #2563EB;
+
+margin-bottom:25px;
+
+font-weight:bold;
+
+}

@@ -1,0 +1,544 @@
+.modal-overlay{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.65);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:999;
+
+}
+
+.question-modal{
+
+width:550px;
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+text-align:center;
+
+}
+
+.question-modal input{
+
+width:100%;
+
+padding:12px;
+
+margin-top:20px;
+
+margin-bottom:20px;
+
+}
+/* =====================================================
+   QUESTION MODAL OVERLAY
+===================================================== */
+
+.question-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 8, 20, 0.88);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+  z-index: 1000;
+}
+
+
+/* =====================================================
+   QUESTION CARD
+===================================================== */
+
+.question-modal {
+  width: min(900px, 92vw);
+  max-height: 88vh;
+
+  background: linear-gradient(
+    145deg,
+    #162338,
+    #0e1828
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+
+  padding: 40px 48px;
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.55),
+    0 0 40px rgba(37, 99, 235, 0.12);
+
+  color: white;
+
+  overflow-y: auto;
+}
+
+
+/* =====================================================
+   QUESTION HEADER
+===================================================== */
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+
+.question-category {
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #60a5fa;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.question-difficulty {
+  padding: 7px 14px;
+
+  border-radius: 20px;
+
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   QUESTION TEXT
+===================================================== */
+
+.question-text {
+  font-size: 23px;
+  line-height: 1.65;
+
+  font-weight: 500;
+
+  color: #f8fafc;
+
+  margin: 25px 0 30px;
+
+  white-space: pre-wrap;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.question-input {
+  width: 100%;
+
+  min-height: 120px;
+
+  padding: 18px 20px;
+
+  box-sizing: border-box;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(148, 163, 184, 0.25);
+
+  background: #0b1422;
+
+  color: white;
+
+  font-size: 18px;
+
+  outline: none;
+
+  resize: vertical;
+
+  transition: 0.2s;
+}
+
+
+.question-input::placeholder {
+  color: #64748b;
+}
+
+
+.question-input:focus {
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.question-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 14px;
+
+  margin-top: 25px;
+}
+
+
+.submit-btn,
+.cancel-btn {
+  padding: 13px 28px;
+
+  border-radius: 12px;
+
+  border: none;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.submit-btn {
+  background: #2563eb;
+
+  color: white;
+}
+
+
+.submit-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+}
+
+
+.cancel-btn {
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #cbd5e1;
+}
+
+
+.cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+
+/* =====================================================
+   POINTS
+===================================================== */
+
+.question-points {
+  font-size: 14px;
+
+  color: #94a3b8;
+
+  margin-top: 8px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .question-overlay {
+    padding: 15px;
+  }
+
+  .question-modal {
+    width: 100%;
+
+    padding: 25px 20px;
+
+    border-radius: 18px;
+  }
+
+  .question-text {
+    font-size: 18px;
+
+    line-height: 1.5;
+  }
+
+  .question-actions {
+    flex-direction: column;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}
+/* =====================================================
+   CODING CONTROLS
+===================================================== */
+
+.coding-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 15px;
+}
+
+.coding-controls label {
+  color: #cbd5e1;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   LANGUAGE SELECT
+===================================================== */
+
+.language-select {
+  padding: 10px 16px;
+
+  border-radius: 9px;
+
+  border: 1px solid rgba(148, 163, 184, 0.3);
+
+  background: #0b1422;
+
+  color: white;
+
+  font-size: 15px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.language-select:focus {
+  border-color: #3b82f6;
+}
+
+
+/* =====================================================
+   CODE EDITOR
+===================================================== */
+
+.code-editor {
+  width: 100%;
+
+  min-height: 330px;
+
+  box-sizing: border-box;
+
+  padding: 20px;
+
+  resize: vertical;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(148, 163, 184, 0.3);
+
+  background: #070d17;
+
+  color: #e2e8f0;
+
+  font-family:
+    "Consolas",
+    "Courier New",
+    monospace;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  outline: none;
+
+  tab-size: 4;
+}
+
+.code-editor::placeholder {
+  color: #475569;
+}
+
+.code-editor:focus {
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .coding-controls {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .language-select {
+    width: 100%;
+  }
+
+  .code-editor {
+    min-height: 250px;
+
+    font-size: 14px;
+  }
+}
+
+/* =====================================================
+   MCQ OPTIONS
+===================================================== */
+
+.mcq-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.mcq-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 14px 16px;
+
+  border: 2px solid #ddd;
+  border-radius: 10px;
+
+  background: white;
+  color: #222;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  font-size: 16px;
+
+  transition: all 0.2s ease;
+}
+
+.mcq-option:hover:not(:disabled) {
+  border-color: #4f46e5;
+  background: #f5f3ff;
+}
+
+.mcq-option.selected {
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+
+.mcq-option:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* A, B, C, D */
+
+.mcq-letter {
+  min-width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e5e7eb;
+
+  font-weight: bold;
+}
+
+.mcq-option.selected .mcq-letter {
+  background: #4f46e5;
+  color: white;
+}
+
+/* Option text */
+
+.mcq-text {
+  flex: 1;
+}
+
+/* Selected answer */
+
+.selected-answer {
+  margin-top: 14px;
+  padding: 10px 14px;
+
+  border-radius: 8px;
+
+  background: #f3f4f6;
+
+  font-size: 14px;
+}
+.mcq-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.mcq-option {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.mcq-option:hover:not(:disabled) {
+    border-color: #6366f1;
+    background: #f5f5ff;
+}
+
+.mcq-option.selected {
+    border-color: #6366f1;
+    background: #eeeeff;
+}
+
+.mcq-option:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}

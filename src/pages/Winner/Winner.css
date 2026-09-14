@@ -1,0 +1,139 @@
+.winner-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+
+    overflow:hidden;
+
+    color:white;
+
+}
+
+.winner-card{
+
+    width:600px;
+
+    background:rgba(255,255,255,.08);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    backdrop-filter:blur(15px);
+
+    border:2px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 0 40px rgba(250,204,21,.45);
+
+    animation:pop .8s ease;
+
+}
+
+.trophy{
+
+    font-size:90px;
+
+    animation:bounce 1.5s infinite;
+
+}
+
+.winner-title{
+
+    color:#facc15;
+
+    font-size:42px;
+
+    letter-spacing:3px;
+
+    margin-top:10px;
+
+}
+
+.winner-name{
+
+    font-size:38px;
+
+    margin:25px 0;
+
+    color:white;
+
+}
+
+.winner-details{
+
+    margin-top:20px;
+
+}
+
+.winner-details p{
+
+    font-size:24px;
+
+    margin:12px 0;
+
+}
+
+.winner-message{
+
+    margin-top:35px;
+
+    font-size:24px;
+
+    line-height:1.8;
+
+    color:#f8fafc;
+
+}
+
+@keyframes bounce{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+@keyframes pop{
+
+    from{
+
+        transform:scale(.6);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}

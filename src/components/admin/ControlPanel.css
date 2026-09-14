@@ -1,0 +1,87 @@
+.control-panel{
+
+    background:#111827;
+
+    border:1px solid rgba(59,130,246,.20);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    position:sticky;
+
+    top:20px;
+
+}
+
+.control-panel h2{
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+.control-buttons{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.control-buttons button{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    color:white;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.control-buttons button:hover{
+
+    transform:scale(1.03);
+
+}
+
+.start-btn{
+
+    background:#16A34A;
+
+}
+
+.pause-btn{
+
+    background:#F59E0B;
+
+}
+
+.reset-btn{
+
+    background:#2563EB;
+
+}
+
+.end-btn{
+
+    background:#DC2626;
+
+}

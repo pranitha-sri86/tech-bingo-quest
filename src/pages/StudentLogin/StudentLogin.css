@@ -1,0 +1,43 @@
+.student-login-page{
+    min-height:100vh;
+    background:#08111f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    padding:40px;
+}
+
+/* Background Glow */
+
+.bg-circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(130px);
+    opacity:.35;
+}
+
+.bg1{
+    width:320px;
+    height:320px;
+    background:#2563eb;
+    top:-100px;
+    left:-100px;
+}
+
+.bg2{
+    width:280px;
+    height:280px;
+    background:#9333ea;
+    bottom:-120px;
+    right:-120px;
+}
+
+.bg3{
+    width:220px;
+    height:220px;
+    background:#06b6d4;
+    left:45%;
+    top:25%;
+}

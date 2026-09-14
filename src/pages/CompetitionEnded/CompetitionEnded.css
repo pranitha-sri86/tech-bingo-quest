@@ -1,0 +1,79 @@
+.ended-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+
+    color:white;
+
+    text-align:center;
+
+    animation:fadeIn .8s ease;
+
+}
+
+.ended-page h1{
+
+    font-size:60px;
+
+    color:#facc15;
+
+    margin-bottom:20px;
+
+}
+
+.ended-page h2{
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+.ended-page p{
+
+    font-size:22px;
+
+    color:#cbd5e1;
+
+    animation:blink 1s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        opacity:.3;
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}

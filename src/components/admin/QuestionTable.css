@@ -1,0 +1,46 @@
+.question-table{
+
+background:#1e293b;
+
+padding:25px;
+
+border-radius:18px;
+
+margin-top:30px;
+
+color:white;
+
+overflow-x:auto;
+
+}
+
+.question-table table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+.question-table th,
+.question-table td{
+
+padding:12px;
+
+text-align:center;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.question-table th{
+
+background:#2563eb;
+
+}
+
+.question-table tr:hover{
+
+background:#334155;
+
+}
